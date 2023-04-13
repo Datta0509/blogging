@@ -12,4 +12,10 @@ export class AppComponent {
   getname(name:any){
     alert('function called')
   }
+displayval = ' ';
+  getdata(val:any){
+    console.warn(val)
+     this.displayval = val 
+
+  }
 }

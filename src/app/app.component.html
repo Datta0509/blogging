@@ -1,2 +1,14 @@
 <h1>Function in Angular</h1>
 <button (click)="getname('hello')">Click Me </button>
+
+<input type="text" #box (keyup)="getdata(box.value)" placeholder="event keyup">
+
+<input  type="text" #box1 (keydown)="getdata(box1.value)" placeholder="key down" />
+
+<input type="text"  #box2 (blur)="getdata(box2.value)" placeholder="onblur"/>
+
+
+<h2  (mouseover)="getdata('i am in mouse over event')" >Happy Birthday</h2>
+<h3 (mouseleave)="getdata(' I am in mouseout event')" >To You </h3>
+
+<p>Value of the box is: {{displayval}}</p>
