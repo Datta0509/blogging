@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-blog';
+  data='hello code'
+  num=100
+  getname(name:any){
+    alert('function called')
+  }
 }
